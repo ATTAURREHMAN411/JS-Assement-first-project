@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        background-color: black;
+        color: white;
+    }
+    
+    h1{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 0;
+        align-items: center;
+        height: 80vh;
+        font-size: 100px;
+    }
+    .container{
+        height: 80px;
+        width: 80vw;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        gap: 40%;
+    
+    }
+    .child{
+        display: flex;
+        gap: 30px;
+    }
+
+    form{
+    text-align: center;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2 class="logo">CHAPTER #02</h2> 
+    
+    
+        <nav class="child">
+       <a href="index.html">CH #01</a>     
+
+       <a href="CH03.html">CH #03</a>
+        <a href="CH04.html">CH #04</a>
+        <a href="CH05.html">CH # 05</a>
+        <a href="table.html">Table</a>
+        </nav>
+       </div>
+    
+      <h1>JAVASCRIPT ASSEMENT</h1>
+
+      <form onsubmit="event.preventDefault(); saveAndShowBioData();">
+        <h2>Enter Student Bio Data</h2>
+       <label for="name">Name:</label>
+       <input type="text" id="name" required><br><br>
+
+       <label for="age">Age:</label>
+       <input type="number" id="age" required><br><br>
+
+       <label for="course">Course:</label>
+       <input type="text" id="course" required><br><br>
+
+       <label for="email">Email:</label>
+       <input type="email" id="email" required><br><br>
+
+       <button type="submit">Submit</button>
+   </form>
+
+
+
+            <script>
+        function saveAndShowBioData() {
+            // Create variables to store student bio data
+            var studentName = document.getElementById("name").value;
+            var studentAge = document.getElementById("age").value;
+            var studentCourse = document.getElementById("course").value;
+            var studentEmail = document.getElementById("email").value;
+
+            // Display the data in alert boxes
+            alert("Student Name: " + studentName);
+            alert("Student Age: " + studentAge);
+            alert("Student Course: " + studentCourse);
+            alert("Student Email: " + studentEmail);
+        }
+
+        var first = "PIZZA"
+        var second = "PIZZ"
+        var third = "PIZ"
+        var four = "PI"
+        var five = "P"
+
+        alert(first)
+        alert(second)
+        alert(third)
+        alert(four)
+        alert(five)
+
+
+      
+   var email = "example@example.com";
+   alert("My email address is " + email);
+
+     var book = "A smarter way to learn JavaScript";
+    alert("I am learning from the book " + book);
+
+
+   var book = "A smarter way to learn JavaScript";
+    var book = "A smarter way to learn JavaScript";
+
+
+alert("“▬▬▬▬▬▬▬▬▬ஜ۩۞۩ஜ▬▬▬▬▬▬▬▬▬”")
+    </script>
+
+</body>
+</html>

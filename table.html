@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        background-color: black;
+        color: white;
+    }
+    
+    h1{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 0;
+        align-items: center;
+        height: 80vh;
+        font-size: 100px;
+    }
+    .container{
+        height: 80px;
+        width: 80vw;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        gap: 40%;
+    
+    }
+    .child{
+        display: flex;
+        gap: 30px;
+    }
+
+    .rest-container {
+        text-align: center;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2 class="logo">TABLE</h2> 
+    
+    
+        <nav class="child">
+       <a href="index.html">CH #01</a>     
+       <a href="CH02.html">CH #02</a>
+       <a href="CH03.html">CH #03</a>
+        <a href="CH04.html">CH #04</a>
+        <a href="CH05.html">CH # 05</a>
+        </nav>
+       </div>
+    
+      <h1>JAVASCRIPT ASSEMENT</h1>
+
+      <div class="rest-container">
+
+      <h2>Hello Word</h2>
+    <input type="number" id="input">
+    <button onclick="work()">Submit</button>
+
+<div class="sub"></div>
+      </div>
+<script>
+
+    
+var input = document.querySelector("#input")
+var div = document.querySelector(".sub")
+
+
+
+
+
+
+function work(){
+    div.innerHTML += ""
+    var num = input.value
+    div.innerHTML = ""
+    for(i=1; i<=10; i++){
+        console.log(i * num)
+       
+        div.innerHTML += `<p>${num} * ${i} = ${i * num}</p>`
+        
+    }
+    
+}
+    
+
+</script>
+</body>
+</html>
